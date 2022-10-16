@@ -7,48 +7,48 @@ const inquirer = require('inquirer');
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of your project',
+        message: 'What is the title of your project? ',
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Please give a description of your project',
+        message: 'Please give a description of your project: ',
         name: 'description'
     },
     {
         type: 'input',
-        message: 'Please provide installation instructions for your project',
+        message: 'Please provide installation instructions for your project: ',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'Please provide the usage information for your project.',
+        message: 'Please provide the usage information for your project: ',
         name: 'usage'
     },
     {
         type: 'list',
-        message: 'Please indicate which license you would like to include for this project.',
+        message: 'Please indicate which license you would like to include for this project: ',
         name: 'license',
         choices: ['MIT', 'Apache', 'BSD', 'No license for this application']
     },
     {
         type: 'input',
-        message: 'Please provide the information necessary for individuals interested in contributing to this project.',
+        message: 'Please provide the information necessary for individuals interested in contributing to this project: ',
         name: 'contributing'
     },
     {
         type: 'input',
-        message: 'Please provide test instructions for your project.',
+        message: 'Please provide test instructions for your project: ',
         name: 'tests'
     },
     {
         type: 'input',
-        message: 'What is your GitHub username?',
+        message: 'What is your GitHub username? ',
         name: 'github'
     },
     {
         type: 'input',
-        message: 'What is your email address?',
+        message: 'What is your email address? ',
         name: 'email'
     }
 ];
