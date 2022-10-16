@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         message: 'Please indicate which license you would like to include for this project.',
         name: 'license',
-        choices: ['MIT', 'Apache', 'BSD', 'Unlicense', 'No license for this application']
+        choices: ['MIT', 'Apache', 'BSD', 'No license for this application']
     },
     {
         type: 'input',
@@ -58,7 +58,7 @@ function writeToFile(data) {
     const READMEContent = generateMarkdown(data);
 
     fs.writeFile('README.md', READMEContent, (err) =>
-    err ? console.log(err) : console.log('Successfully created README file.'))
+    err ? console.log(err) : console.log('Successfully created README.md file.'))
 }
 
 // Function to initialize app
